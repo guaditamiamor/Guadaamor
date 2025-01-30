@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín, Guada?</title>
+    <style>
+        body {
+            background-color: #f0e6f6;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d6336c;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+            color: #555;
+        }
+        .heart {
+            color: #d6336c;
+            font-size: 5em;
+            margin: 20px 0;
+        }
+        .options {
+            margin: 20px;
+        }
+        .option-button {
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .option-button:hover {
+            background-color: #c0265a;
+        }
+        .message {
+            display: none;
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+        }
+        .video {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Hola Guada</h1>
+    <p>Desde que te conocí, mi vida ha sido como un hermoso sueño.</p>
+    <div class="heart">❤️</div>
+    <p>¿Quieres ser mi San Valentín?</p>
+    <div class="options">
+        <button class="option-button" onclick="showMessage()">¡Sí, quiero!</button>
+        <button class="option-button" onclick="showMessage()">¡Por supuesto!</button>
+        <button class="option-button" onclick="showMessage()">¡Claro que sí!</button>
+    </div>
+    <div id="message" class="message">
+        <p>¡Guada, eres el amor de mi vida! Te amo más de lo que las palabras pueden expresar.</p>
+        <p>Gracias por ser mi San Valentín y llenar mi vida de alegría y amor.</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
